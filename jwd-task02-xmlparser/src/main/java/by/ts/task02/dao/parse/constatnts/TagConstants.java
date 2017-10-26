@@ -1,4 +1,4 @@
-package by.ts.task02.dao.parse;
+package by.ts.task02.dao.parse.constatnts;
 
 /**
  * Created by Lenovo on 10/26/2017.

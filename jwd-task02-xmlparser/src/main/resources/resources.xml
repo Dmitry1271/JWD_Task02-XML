@@ -1,15 +1,14 @@
 <?xml version="1.0" ?>
 <quiz>
     <qanda seq="1">
-        <question>
-        5
+        <question>5
         </question>
         <answer>
             Dudko
         </answer>
     </qanda>
-    <asdasdad ses="d" />
-    <qanda seq="" >
+    <asdasdad ses="d"/>
+    <qanda seq="">
         <question>
             Where is Dima?
         </question>

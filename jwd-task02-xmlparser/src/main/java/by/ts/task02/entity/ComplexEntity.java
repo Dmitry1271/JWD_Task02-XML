@@ -8,10 +8,7 @@ import java.util.Map;
 public class ComplexEntity extends Entity {
     List<Entity> entities = new ArrayList<Entity>();
 
-    public ComplexEntity(){}
-
-    public ComplexEntity(String name){
-        super(name);
+    public ComplexEntity() {
     }
 
     public ComplexEntity(String tag, Map<String, String> attributes) {
@@ -27,14 +24,30 @@ public class ComplexEntity extends Entity {
         this.entities = entities;
     }
 
-    public void addEntity(Entity entity){
+    public void addEntity(Entity entity) {
         entities.add(entity);
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        ComplexEntity that = (ComplexEntity) o;
+
+        return entities != null ? entities.equals(that.entities) : that.entities == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (entities != null ? entities.hashCode() : 0);
+        return result;
+    }
+
+    @Override
     public String toString() {
-        return super.toString() + "ComplexEntity{" +
-                "entities=" + entities +
-                '}';
+        return super.toString() + entities;
     }
 }
