@@ -4,6 +4,7 @@ package by.tc.task02.dao.impl;
 import by.tc.task02.dao.EntityDAO;
 import by.tc.task02.dao.parse.Parser;
 import by.tc.task02.entity.Entity;
+import by.tc.task02.exception.InvalidFileException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,8 +25,8 @@ public class EntityDAOImpl implements EntityDAO {
             }
             return parser.getEntity();
 
-        } catch (IOException e) {
-            System.err.println(e.getMessage());
+        } catch (IOException | InvalidFileException e) {
+            System.err.println(e);
             return null;
         }
     }

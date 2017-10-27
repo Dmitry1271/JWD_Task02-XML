@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <journal>
     <title>Very Useful Journal</title>
-    <contacts>
+    <contacts seq="1" letter="A" type="parent">
         <address>sdsds</address>
-        <tel>8-3232-121212</tel>
-        <tel>8-3232-121212</tel>
+        <tel type="telephone" visible="true">8-3232-121212</tel>
+        <tel type="telephone">8-3232-121212</tel>
         <email>j@j.ru</email>
         <url>www.j.ru</url>
     </contacts>
@@ -55,16 +55,22 @@
             <email>vanya@r.ru</email>
         </author>
 
-        <author ID="3">
-            <firstname>Petr</firstname>
-            <lastname>Ivanov</lastname>
-            <email>petr@r.ru</email>
+        <author ID="3"><firstname>Petr</firstname><lastname>Ivanov</lastname><email>petr@r.ru</email></author>
+
+        <author ID="4">
+            <firstname>
+                Sidor
+            </firstname>
+            <lastname>
+                Sidorov</lastname>
+            <email>sidor@r.ru
+            </email>
         </author>
 
         <author ID="4">
-            <firstname>Sidor</firstname>
-            <lastname>Sidorov</lastname>
-            <email>sidor@r.ru</email>
+            <firstname>Kozel</firstname>
+            <lastname>Kozlov</lastname>
+            <email>kozel@r.ru</email>
         </author>
     </authors-list>
 </journal>

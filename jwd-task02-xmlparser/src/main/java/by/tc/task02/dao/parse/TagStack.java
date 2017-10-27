@@ -9,6 +9,7 @@ import java.util.Stack;
 public class TagStack {
     private final int FIRST_POSITION = 0;
     private final String SPACE = " ";
+    private final int ITERATOR_DEPTH = 1;
 
     private BuilderDirector builderDirector = new BuilderDirector();
 
@@ -41,7 +42,7 @@ public class TagStack {
         }
         if (tag.matches(TagConstants.SELF_CLOSING_TAG)) {
             Entity entity = builderDirector.getBuilder("SELF_CLOSING_TAG").build(tag);
-            entity.setDepth(stackDepth + 1);
+            entity.setDepth(stackDepth + ITERATOR_DEPTH);
             return entity;
         }
         if (tag.matches(TagConstants.XML_TAG)) {

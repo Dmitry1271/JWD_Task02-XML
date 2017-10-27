@@ -1,6 +1,5 @@
 package by.tc.task02.runner.writer;
 
-
 import by.tc.task02.entity.ComplexEntity;
 import by.tc.task02.entity.Entity;
 import by.tc.task02.entity.SimpleEntity;
@@ -13,6 +12,10 @@ public class PrintData {
     }
 
     private void buildOutput(Entity entity) {
+        if (entity == null) {
+            return;
+        }
+
         if (entity instanceof ComplexEntity) {
             output.append(PrintHelper.getEntityInfo(entity)).append("\n");
             for (Entity elem : ((ComplexEntity) entity).getEntities()) {

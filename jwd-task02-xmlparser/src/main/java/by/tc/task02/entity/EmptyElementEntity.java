@@ -15,6 +15,6 @@ public class EmptyElementEntity extends Entity {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "EmptyElementEntity{}";
     }
 }
