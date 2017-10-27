@@ -3,7 +3,7 @@ package by.tc.task02.entity;
 import java.io.Serializable;
 import java.util.Map;
 
-public abstract class Entity implements Serializable{
+public abstract class Entity implements Serializable {
     private String tag;
     private Map<String, String> attributes;
     private int depth;

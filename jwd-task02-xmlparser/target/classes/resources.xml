@@ -5,8 +5,7 @@
         <address>sdsds</address>
         <tel type="telephone" visible="true">8-3232-121212</tel>
         <tel type="telephone">8-3232-121212</tel>
-        <email>j@j.ru</email>
-        <url>www.j.ru</url>
+        <email>qwer@mail.ru</email>
     </contacts>
     <issues-list>
 
@@ -48,15 +47,12 @@
         </issue>
     </issues-list>
     <authors-list>
-
         <author ID="1">
             <firstname>Ivan</firstname>
             <lastname>Petrov</lastname>
             <email>vanya@r.ru</email>
         </author>
-
-        <author ID="3"><firstname>Petr</firstname><lastname>Ivanov</lastname><email>petr@r.ru</email></author>
-
+        <author ID="3">  <firstname>Petr</firstname>  <lastname>Ivanov</lastname><email>petr@r.ru</email></author>
         <author ID="4">
             <firstname>
                 Sidor
@@ -66,7 +62,6 @@
             <email>sidor@r.ru
             </email>
         </author>
-
         <author ID="4">
             <firstname>Kozel</firstname>
             <lastname>Kozlov</lastname>

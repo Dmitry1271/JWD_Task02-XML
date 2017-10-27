@@ -3,7 +3,6 @@ package by.tc.task02.dao.parse;
 import by.tc.task02.dao.parse.constatnts.TagConstants;
 import by.tc.task02.entity.Entity;
 import by.tc.task02.entity.ComplexEntity;
-import by.tc.task02.exception.InvalidFileException;
 
 import java.util.Stack;
 import java.util.regex.Matcher;
@@ -16,7 +15,7 @@ public class Parser {
     private Stack<Entity> entities = new Stack<>();
 
 
-    public void parseLine(String line) throws InvalidFileException {
+    public void parseLine(String line){
         Pattern pattern = Pattern.compile(TagConstants.FINDER);
         Matcher matcher = pattern.matcher(line.trim());
 
@@ -27,8 +26,6 @@ public class Parser {
                 if (entity != null) {
                     handleEntity(entity);
                 }
-            } else {
-                throw new InvalidFileException("Incorrect data in th file");
             }
         }
     }
